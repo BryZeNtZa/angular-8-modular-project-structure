@@ -1,0 +1,75 @@
+<mat-toolbar color="primary" class="login-toolbar">
+    <mat-toolbar-row>
+        <button mat-icon-button class="login-logo">
+            <a routerlink="/dashboard" ng-reflect-router-link="/dashboard" href="#/dashboard">
+                <img src="assets/images/logo.png">
+            </a>
+        </button>
+        <h1>DSF REPORT</h1>
+        <span class="menu-spacer"></span>
+        <div class="row">
+            <div class="col col-md-8"></div>
+            <div class="col col-md-4" style="text-align: right"><!--Menu Langue--></div>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+      
+      
+<mat-grid-list cols="3">
+  <mat-grid-tile></mat-grid-tile>
+
+  <!-- Writing markup for login starts -->
+  <mat-grid-tile class="login-element">
+      <div class="login-container">
+
+          <!-- Template Header starts -->
+          <div class="login-box-header">
+            <mat-icon>lock_open</mat-icon> <span class="lbox-title">Veuillez vous loguer !</span>
+          </div>
+          <!-- Template Header ends -->
+
+          <!-- Template Body starts -->
+          <div class="login-box-body">
+            
+            <form [formGroup]="loginForm" class="form" novalidate>
+                
+                <!-- Markup for getting Username starts -->
+                <mat-grid-list cols="1" rowHeight="100px">
+                    <mat-grid-tile>
+                        <mat-form-field class="justifier">
+                            <input matInput formControlName="username" placeholder="Username" text="text" >
+                        </mat-form-field>
+                    </mat-grid-tile>
+                </mat-grid-list>
+                <!-- Markup for getting Username ends -->
+
+                <!-- Markup for getting Password starts -->
+                <mat-grid-list cols="1" rowHeight="100px">
+                    <mat-grid-tile>
+                        <mat-form-field class="justifier">
+                            <input matInput formControlName="password" placeholder="Password" text="password"  [type]="hidePassword ? 'password' : 'text'" >
+                            <button mat-icon-button matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword">
+                            <mat-icon class="login-icon">{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </mat-grid-tile>
+                </mat-grid-list>
+                <!-- Markup for getting Password ends -->
+
+                <button mat-raised-button [disabled]="loginInProgress" (click)="login()" class="login-button metalic-font-bold"> 
+                    Go
+                </button>
+
+            </form>
+
+          </div>
+          <!-- Template Body ends -->
+          
+      </div>
+  </mat-grid-tile>
+  <!-- Writing markup for login ends -->
+  <mat-grid-tile></mat-grid-tile>
+
+</mat-grid-list>
+
+<app-footer-layout></app-footer-layout>

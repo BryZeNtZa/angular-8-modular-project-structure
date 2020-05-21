@@ -1,0 +1,4 @@
+<select >
+	<option *ngFor="let item of data; let i = index" (click)="menuItemClicked(i)" [selected]="item.active">
+	</option>
+</select>

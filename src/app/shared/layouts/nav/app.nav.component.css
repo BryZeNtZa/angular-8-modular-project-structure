@@ -1,0 +1,19 @@
+.app-layout-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  background:linear-gradient(to bottom, #D4DBBB 0%, #FDFFF8 100%);
+  width: 100%;
+  height: 50px;
+  color: #666;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px #FFF;
+  border-bottom: 1px solid #D6E4A6;
+}
+.app-layout-nav .nav-holder {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  background: none;
+}

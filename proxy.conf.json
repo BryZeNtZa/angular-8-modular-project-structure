@@ -1,0 +1,7 @@
+{
+    "/nkap-acajou/*": {
+        "target": "http://localhost:8686/",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

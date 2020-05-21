@@ -1,0 +1,17 @@
+.nav-logo {
+  position: relative;
+  left: 15px;
+  top: 3.5px;
+ }
+.nav-logo .nav-app-name {
+   font-size: 120%;
+   color: #666;
+   font-weight: bold;
+   text-shadow: 1px 1px 0px #FFF;
+   margin-left: 10px;
+ }
+.nav-logo img {
+   width: 40px;
+   height: 40px;
+ }
+ 

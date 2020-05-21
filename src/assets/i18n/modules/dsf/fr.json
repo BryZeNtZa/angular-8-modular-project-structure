@@ -1,0 +1,11 @@
+{
+	"mod.msg.welcome":"Vous êtes dans le module DSF, veuillez naviguer dans le menu de gauche.",
+	"mod.menu.dsf":"Menu DSF",
+	"mod.menu.generate":"Générer",
+	"mod.menu.generate.description":"Générer la DSF",
+	"mod.menu.parameter":"Paramétrer",
+	"mod.menu.parameter.description":"Paramétrer les entrées de la DSF",
+	"mod.choose.build.mode.normal": "DSF en Régime Normal",
+	"mod.choose.build.mode.simple": "DSF en Régime Simplifié",
+	"mod.rapport.intitule": "Intitulé du rapport"
+}
